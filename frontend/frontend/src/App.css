@@ -14,8 +14,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f8f9fa;
+    background: #5799db;
     text-align: center; /* Center all text */
+    background-image: url("https://t4.ftcdn.net/jpg/07/12/95/49/360_F_712954921_kKmRlMRno9gtWF9YphTVCyfl9mb9Rvst.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* HERO SECTION */
@@ -29,7 +32,6 @@ body {
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.6);
     padding: 50px;
     text-align: center;
     color: white;
@@ -49,7 +51,7 @@ body {
 
 /* Search Box */
 .search-box input {
-    padding: 12px;
+    padding: 15px;
     width: 250px;
     border-radius: 30px;
     border: none;
@@ -61,7 +63,7 @@ body {
     border-radius: 30px;
     border: none;
     background: #ff4d4d;
-    color: white;
+    color: black;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
@@ -70,6 +72,19 @@ body {
 .search-box button:hover {
     background: #e60000;
     transform: scale(1.1);
+}
+
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
 /* Section Title */
@@ -94,6 +109,7 @@ body {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     transition: 0.4s;
+    color: black;
 }
 
 .recipe-card:hover {
