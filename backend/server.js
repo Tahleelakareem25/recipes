@@ -7,9 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 dotenv.config();
-
-// Connect to database (optional, depends on your app)
-connectDB();
+connectDB(); // Optional DB connection
 
 const app = express();
 
@@ -17,7 +15,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
 // Serve recipes from JSON
 app.get('/api/recipes', (req, res) => {
   const filePath = path.join(__dirname, 'seed', 'recipes.json');
@@ -29,7 +26,7 @@ app.get('/api/recipes', (req, res) => {
 
     try {
       const recipes = JSON.parse(data);
-      res.json(recipes);
+      res.json(recipes); // ✅ Always returns valid JSON
     } catch (parseErr) {
       console.error('Error parsing recipes.json:', parseErr);
       res.status(500).json({ error: 'Invalid JSON in recipes file' });
@@ -39,7 +36,7 @@ app.get('/api/recipes', (req, res) => {
 
 // Health check route (optional)
 app.get('/', (req, res) => {
-  res.send('Server is running!');
+  res.json({ message: 'Server is running!' }); // ✅ Return JSON, not text
 });
 
 // Start server
