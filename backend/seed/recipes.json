@@ -4,14 +4,14 @@
     "name": "Chicken Curry",
     "ingredients": ["Chicken", "Onion", "Tomato", "Spices"],
     "instructions": "Cook chicken with onions, tomatoes and spices.",
-    "image": "https://images.unsplash.com/photo-1604908177521-1f0a3f9ef3c5"
+    "image": "https://foodlmo.com/wp-content/uploads/2025/02/Image_3-107.png"
   },
   {
     "id": 2,
     "name": "Veg Biryani",
     "ingredients": ["Rice", "Vegetables", "Spices", "Yogurt"],
     "instructions": "Cook rice with vegetables and spices.",
-    "image": "https://images.unsplash.com/photo-1601050696012-1f2d4c5f7f2b"
+    "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2019/04/veg-biryani-recipe-680x510.jpg"
   },
   {
     "id": 3,
