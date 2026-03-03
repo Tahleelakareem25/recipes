@@ -127,7 +127,7 @@ body {
     border: none;
     border-radius: 20px;
     background: #ff4d4d;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: 0.3s;
     margin: 0 auto; /* Center button */
