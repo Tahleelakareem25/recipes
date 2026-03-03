@@ -5,7 +5,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/recipes") // Backend API URL
+    fetch("https://recipes-cpfl.onrender.com") // Backend API URL
       .then(res => res.json())
       .then(data => setRecipes(data));
   }, []);
